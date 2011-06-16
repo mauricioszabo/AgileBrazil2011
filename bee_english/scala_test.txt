@@ -1,0 +1,10 @@
+        value of string is "
+        person:
+          name: Ariovaldo Steil
+          age: 22
+        "
+        value of xml is string converted to xml
+        xml should have tag person
+            inside, should have tag age, value 22 and
+            inside, should have tag name, value "Ariovaldo Steil"
+
