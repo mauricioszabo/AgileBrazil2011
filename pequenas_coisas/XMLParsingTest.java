@@ -9,7 +9,6 @@ import java.io.*;
 public class XMLParsingTest {
     @Test public void getTheCorrectNumberOfPeopleOnXML() throws Exception {
         DocumentBuilderFactory docBuilderF = DocumentBuilderFactory.newInstance();
-        docBuilderF.setNamespaceAware(false);
         DocumentBuilder docBuilder = docBuilderF.newDocumentBuilder();
         Document doc = docBuilder.parse(new ByteArrayInputStream(xml().getBytes()));
         assertThat(doc.getElementsByTagName("person").getLength(), is(2));
@@ -37,7 +36,6 @@ public class XMLParsingTest {
                     try {
                         String xml = (String) xmlObj;
                         DocumentBuilderFactory docBuilderF = DocumentBuilderFactory.newInstance();
-                        docBuilderF.setNamespaceAware(false);
                         DocumentBuilder docBuilder = docBuilderF.newDocumentBuilder();
                         Document doc = docBuilder.parse(new ByteArrayInputStream(xml.getBytes()));
                         return doc.getElementsByTagName(tagName).getLength() == count;
