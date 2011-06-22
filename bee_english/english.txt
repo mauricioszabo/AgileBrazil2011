@@ -1,4 +1,4 @@
-i have a string like the following:
+I have a string like the following:
   person:
     name: Ariovaldo Steil
     age: 22
@@ -7,3 +7,5 @@ when I convert it to xml
 then my xml should have tag "person"
 inside the tag "person", it should have the tag "age", value "22"
 and should have tag "name", value "Ariovaldo Steil"
+
+
